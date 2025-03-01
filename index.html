@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="menu" class="menu">
+            <h1>Car Racing Game</h1>
+            <div id="car-selection" class="selection-container">
+                <h2>Select Your Car</h2>
+                <div class="car-options">
+                    <div class="car-option" data-car="1">
+                        <img src="assets/car1.png" alt="Car 1">
+                        <p>Basic Car</p>
+                        <span class="status">Available</span>
+                    </div>
+                    <div class="car-option locked" data-car="2">
+                        <img src="assets/car2.png" alt="Car 2">
+                        <p>Sports Car</p>
+                        <span class="status">Unlocked after 3 races</span>
+                    </div>
+                    <div class="car-option locked" data-car="3">
+                        <img src="assets/car3.png" alt="Car 3">
+                        <p>Super Car</p>
+                        <span class="status">Unlocked after 6 races</span>
+                    </div>
+                </div>
+            </div>
+            <div id="city-selection" class="selection-container">
+                <h2>Select City</h2>
+                <div class="city-options">
+                    <div class="city-option" data-city="newyork">
+                        <img src="assets/newyork.png" alt="New York">
+                        <p>New York</p>
+                    </div>
+                    <div class="city-option" data-city="bangalore">
+                        <img src="assets/bangalore.png" alt="Bangalore">
+                        <p>Bangalore</p>
+                    </div>
+                </div>
+            </div>
+            <button id="start-game" class="start-button">Start Race</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-ui" class="game-ui hidden">
+            <div class="stats">
+                <div class="speed">Speed: <span id="current-speed">0</span> km/h</div>
+                <div class="distance">Distance: <span id="distance">0</span> km</div>
+            </div>
+        </div>
+    </div>
+    <script src="car.js"></script>
+    <script src="track.js"></script>
+    <script src="game.js"></script>
+</body>
+</html> 

@@ -1,0 +1,12 @@
+{
+  "name": "car-racing-game",
+  "version": "1.0.0",
+  "description": "A simple car racing game",
+  "main": "game.js",
+  "scripts": {
+    "generate-assets": "node generate_assets.js"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2"
+  }
+} 
